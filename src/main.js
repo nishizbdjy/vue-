@@ -1,6 +1,6 @@
 import Vue from 'vue'
 // import App from './App.vue'
-import App from '@/components/v-bind.vue'
+import App from '@/components/v-for.vue'
 
 
 Vue.config.productionTip = false
