@@ -24,7 +24,7 @@
           <td>{{value.bname}}</td>
           <td>{{value.btiem}}</td>
           <td>
-            <a href="#">删除</a>
+            <a href="#" @click="shanchu(index)">删除</a>
           </td>
         </tr>
 
@@ -69,6 +69,9 @@ export default {
   methods: {
       tianjia(){       //使用展开运算符
           this.arr.push({...this.shuju})
+      },
+      shanchu(index){
+          this.arr.splice(index,1)
       }
   }
 };
