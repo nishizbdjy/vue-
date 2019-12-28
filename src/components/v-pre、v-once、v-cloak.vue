@@ -5,7 +5,7 @@
       <p>{{age}}</p>
       <p v-once>v-once{{age}}页面一加载渲染一次了</p>
       <input type="text" v-model="age">
-      <!-- v-cloak  相当于异步请求数据成功后才渲染 -->
+      <!-- v-cloak  相当于异步请求数据成功后才渲染 隐藏未编译完成的-->
       <!-- 用定时器模拟 -->
   </div>
 </template>

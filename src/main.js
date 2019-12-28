@@ -1,6 +1,6 @@
 import Vue from 'vue'
 // import App from './App.vue'
-import App from '@/components/v-pre、v-once、v-cloak.vue'
+import App from '@/components/数据管理案例.vue'
 
 
 Vue.config.productionTip = false
