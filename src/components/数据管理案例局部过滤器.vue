@@ -22,7 +22,7 @@
         <tr v-for="(value,index) in arr" :key="index">
           <td>{{value.id}}</td>
           <td>{{value.bname}}</td>
-          <td>{{value.btiem}}</td>
+          <td>{{value.btiem | guolvqi}}</td>
           <td>
             <a href="#" @click="shanchu(index)">删除</a>
           </td>
@@ -75,6 +75,15 @@ export default {
       shanchu(index){
           this.arr.splice(index,1)
       }
+  },
+  filters : {
+    guolvqi(tiem){
+    let nian = tiem.getFullYear()//年
+    let yue = tiem.getMonth()+1//月
+    let ri = tiem.getDate()//日
+    let riqi = `${nian}-${yue}-${ri}`
+    return riqi
+    }
   }
 };
 </script>
