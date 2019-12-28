@@ -67,8 +67,8 @@ export default {
     };
   },
   methods: {
-      tianjia(){
-          this.arr.push(this.shuju)
+      tianjia(){       //使用展开运算符
+          this.arr.push({...this.shuju})
       }
   }
 };
