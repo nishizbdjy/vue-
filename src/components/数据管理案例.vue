@@ -27,7 +27,9 @@
             <a href="#" @click="shanchu(index)">删除</a>
           </td>
         </tr>
-
+         <tr>
+             <td colspan="4" v-if="arr.length===0">数据没咯</td>
+         </tr>
       </table>
     </div>
   </div>
