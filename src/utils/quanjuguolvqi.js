@@ -3,7 +3,7 @@ import vue from 'vue'//
 
 export const quanjuglq = vue.filter('glq', (tiem, p) => {
     p = p || '-'
-    let nian = tiem.getFullYaer()//年
+    let nian = tiem.getFullYear()//年
     let yue = tiem.getMonth() + 1//月
     let ri = tiem.getDate()//日
     let riqi = `${nian}${p}${yue}${p}${ri}`
