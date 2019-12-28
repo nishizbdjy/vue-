@@ -2,10 +2,10 @@
   <div id="app">
     <div class="add">
       编号:
-      <input type="text"/>
+      <input type="text" v-model="shuju.id"/>
       品牌名称:
-      <input type="text"/>
-      <input type="button" value="添加"  />
+      <input type="text" v-model="shuju.bname"/>
+      <input type="button" value="添加"  @click="tianjia"/>
     </div>
     <div class="add">
       品牌名称:
@@ -37,7 +37,7 @@
 export default {
   data() {
     return {
-      tianjia: {
+      shuju: {
         id: "",
         bname: "",
         btiem: new Date()
@@ -67,6 +67,9 @@ export default {
     };
   },
   methods: {
+      tianjia(){
+          this.arr.push(this.shuju)
+      }
   }
 };
 </script>
