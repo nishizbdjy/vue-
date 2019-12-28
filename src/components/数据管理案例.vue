@@ -19,10 +19,10 @@
           <th>创立时间</th>
           <th>操作</th>
         </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr v-for="(value,index) in arr" :key="index">
+          <td>{{value.id}}</td>
+          <td>{{value.bname}}</td>
+          <td>{{value.btiem}}</td>
           <td>
             <a href="#">删除</a>
           </td>
