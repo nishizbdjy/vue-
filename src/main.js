@@ -1,6 +1,6 @@
 import Vue from 'vue'
 // import App from './App.vue'
-import App from '@/components/数据管理案例全局过滤器.vue'
+import App from '@/components/ref和$refs.vue'
 
 
 Vue.config.productionTip = false
