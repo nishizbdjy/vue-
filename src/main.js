@@ -1,6 +1,6 @@
 import Vue from 'vue'
 // import App from './App.vue'
-import App from '@/components/使用全局自定义指令.vue'
+import App from '@/components/计算属性.vue'
 
 
 Vue.config.productionTip = false
