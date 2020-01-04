@@ -1,6 +1,6 @@
 import Vue from 'vue'
 // import App from './App.vue'
-import App from '@/components/axios发送get、post请求.vue'
+import App from '@/components/axios常用的api.vue'
 
 
 Vue.config.productionTip = false
